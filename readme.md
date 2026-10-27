@@ -70,10 +70,10 @@ Observe the FastAPI application with three pillars of observability on [Grafana]
    locust -f locustfile.py --headless --users 10 --spawn-rate 1 -H http://localhost:8000
    ```
 
-   Or you can send requests with [k6](https://k6.io/):
+   Or you can send requests with [Perfscale](https://github.com/Perfscale/perfscale/releases/tag/v0.28.0):
 
    ```bash
-   k6 run --vus 1 --duration 300s k6-script.js
+   perfscale run -f perfscale.test.yaml -c perfscale.config.yaml
    ```
 
 4. Check predefined dashboard `FastAPI Observability` on Grafana [http://localhost:3000/](http://localhost:3000/) login with `admin:admin`

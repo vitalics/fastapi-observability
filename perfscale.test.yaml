@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Perfscale/perfscale/main/schema/test.schema.json
+steps:
+  - name: localhost:8000 /
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8000/
+  - name: localhost:8000 /io_task
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8000/io_task
+  - name: localhost:8000 /cpu_task
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8000/cpu_task
+  - name: localhost:8000 /random_sleep
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8000/random_sleep
+  - name: localhost:8000 /random_status
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8000/random_status
+  - name: localhost:8000 /chain
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8000/chain
+  - name: localhost:8000 /error_test
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8000/error_test
+  - name: localhost:8001 /
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8001/
+  - name: localhost:8001 /io_task
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8001/io_task
+  - name: localhost:8001 /cpu_task
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8001/cpu_task
+  - name: localhost:8001 /random_sleep
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8001/random_sleep
+  - name: localhost:8001 /random_status
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8001/random_status
+  - name: localhost:8001 /chain
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8001/chain
+  - name: localhost:8001 /error_test
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8001/error_test
+  - name: localhost:8002 /
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8002/
+  - name: localhost:8002 /io_task
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8002/io_task
+  - name: localhost:8002 /cpu_task
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8002/cpu_task
+  - name: localhost:8002 /random_sleep
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8002/random_sleep
+  - name: localhost:8002 /random_status
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8002/random_status
+  - name: localhost:8002 /chain
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8002/chain
+  - name: localhost:8002 /error_test
+    use: std/http@v1
+    with:
+      method: GET
+      url: http://localhost:8002/error_test
+  - name: sleep 500ms
+    use: std/sleep@v1
+    with:
+      seconds: 0.5
